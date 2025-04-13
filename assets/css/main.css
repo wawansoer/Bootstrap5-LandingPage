@@ -38,6 +38,22 @@ body {
   margin: 0 auto;
   top: 0.5rem;
 }
+.nav-item .nav-link:hover {
+  color: var(--brand-color);
+  animation: bounce 0.8s linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /* Animated Background */
 
