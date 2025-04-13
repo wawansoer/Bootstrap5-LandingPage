@@ -72,6 +72,11 @@ p {
   color: var(--text-color-muted);
 }
 
+.card {
+  background-color: var(--navbar-bg);
+  box-shadow: var(--navbar-shadow);
+}
+
 /* Animated Background */
 
 #animated-background {
