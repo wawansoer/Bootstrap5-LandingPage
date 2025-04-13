@@ -1,3 +1,44 @@
+:root {
+  --bg-color: oklch(0.98 0 0 0);
+  --navbar-bg: oklch(98.5% 0.001 106.423);
+  --navbar-shadow: 0 2px 10px oklch(87.2% 0.01 258.338);
+  --brand-color: oklch(0.58 0.2282 260.03);
+  --text-color: oklch(0.2 0 0 0);
+  --text-color-muted: oklch(0.5 0.005 0);
+}
+
+[data-bs-theme="dark"] {
+  --bg-color: oklch(14.7% 0.004 49.25);
+  --navbar-bg: oklch(14.7% 0.004 49.25);
+  --navbar-shadow: 0 2px 10px oklch(27.8% 0.033 256.848);
+  --text-color: oklch(0.95 0 0 0);
+  --text-color-muted: oklch(87.2% 0.01 258.338);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "DM Mono", monospace;
+  line-height: 1.6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+.brand-color {
+  color: var(--brand-color);
+}
+
+#navbar-main {
+  background-color: var(--navbar-bg);
+  box-shadow: var(--navbar-shadow);
+  border-radius: 1rem;
+  width: 90vw;
+  margin: 0 auto;
+  top: 0.5rem;
+}
+
 /* Animated Background */
 
 #animated-background {
